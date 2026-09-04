@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>خدمات سياحية - رحلتك عندنا</title>
+    
+    <!-- استدعاء خط كايرو -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- ربط ملف التصميم -->
+</head>
+<body>
+
+    <!-- القائمة العلوية -->
+    <header class="navbar">
+        <div class="logo">آفاق</div>
+        <nav>
+            <a href="#home">الرئيسية</a>
+            <a href="#cars">سياراتنا</a>
+            <a href="#hotels">الفنادق</a>
+            <a href="#contact">تواصل معنا</a>
+        </nav>
+    </header>
+    
+    <!-- الواجهة الترحيبية -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>استمتع بأفضل رحلة في مصر</h1>
+            <p id="home_page">نوفر لك أحدث السيارات وأفخم الفنادق لضمان راحتك من لحظة وصولك.</p>
+            <button class="cta-btn" onclick="bookNow()">احجز رحلتك الآن</button>
+        </div>
+    </section>
+    
+    <!-- قسم السيارات -->
+    <section id="cars" class="services-section">
+        <h2>أسطول السيارات الخاص بنا</h2>
+        <div class="cards-container">
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?auto=format&fit=crop&w=400&q=80" alt="سيارة فخمة">
+                <h3>سيارات سيدان فخمة</h3>
+                <p>مكيفة، سائق محترف، وتوصيل من وإلى المطار.</p>
+            </div>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=400&q=80" alt="فان عائلي">
+                <h3>فانات عائلية</h3>
+                <p>مساحة واسعة تناسب العائلات والمجموعات السياحية الكبيرة.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم الفنادق -->
+    <section id="hotels" class="services-section bg-light">
+        <h2>أفضل الفنادق للإقامة</h2>
+        <div class="cards-container">
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=400&q=80" alt="فندق يطل على النيل">
+                <h3>إطلالة ساحرة على النيل</h3>
+                <p>غرف مجهزة بأعلى مستوى لراحتك بعد يوم طويل من الجولات.</p>
+            </div>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=400&q=80" alt="فندق قريب من المعالم">
+                <h3>موقع متميز</h3>
+                <p>فنادق قريبة من أهم المعالم السياحية لتوفير وقتك.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- الفوتر -->
+    <footer id="contact">
+        <h3>جاهز تبدأ رحلتك؟</h3>
+        <p>تواصل معنا للحصول على أفضل العروض والمواعيد المناسبة لك.</p>
+<a href="tel:01559600258" style="color: var(--accent-gold); text-decoration: none; font-size: 1.2rem; font-weight: bold;">01559600258</a>    
+</footer>
+    
+    <!-- ربط ملف التفاعل -->
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    
+</body>
+</html>
