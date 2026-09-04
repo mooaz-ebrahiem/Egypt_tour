@@ -1,6 +1,6 @@
 // وظيفة زر الحجز التي تفتح شات الواتساب مباشرة
 function bookNow() {
-    let phoneNumber = "201559600258"; 
+    let phoneNumber = "201501541424"; 
     let message = "مرحبا ارغب في التعرف علي برامجمكم السياحيه المتاحه"; 
     let encodedMessage = encodeURIComponent(message); 
     
