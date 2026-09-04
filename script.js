@@ -1,7 +1,7 @@
 // وظيفة زر الحجز التي تفتح شات الواتساب مباشرة
 function bookNow() {
-    let phoneNumber = "201229904614"; 
-    let message = "Hello! I would like to book a trip with you."; 
+    let phoneNumber = "201559600258"; 
+    let message = "مرحبا ارغب في التعرف علي برامجمكم السياحيه المتاحه"; 
     let encodedMessage = encodeURIComponent(message); 
     
     window.open(`https://wa.me/${phoneNumber}?text=${encodedMessage}`, '_blank');
