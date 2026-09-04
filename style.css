@@ -1,0 +1,209 @@
+/* الألوان الأساسية والتنسيقات العامة */
+:root {
+    --primary-blue: #0A3D62;
+    --accent-gold: #F5B041;
+    --text-dark: #2C3E50;
+    --bg-white: #FFFFFF;
+    --bg-light-gray: #F9F9F9;
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cairo', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* القائمة العلوية */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primary-blue);
+    padding: 15px 50px;
+    color: var(--bg-white);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    transition: box-shadow 0.3s;
+}
+
+@font-face {
+    font-family: 'mt lombardia luxury';
+    src: url('path-to-font/MT-Lombardia-Luxury.woff2') format('woff2');
+}
+
+.navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+    font-family:'mt lombardia luxury';
+    color: var(--accent-gold);
+}
+
+.navbar nav a {
+    color: var(--bg-white);
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+/* تأثير على لينكات القائمة العلوية لما تقف عليها */
+.navbar nav a:hover {
+    color: var(--accent-gold);
+    /* إضافة تأثير خط تحت الكلام */
+    text-decoration: underline;
+    /* جعل الكلام يميل قليلاً */
+    transform: skewX(-10deg);
+    display: inline-block; /* ضروري عشان الـ skew يشتغل على الـ link */
+    transition: all 0.3s ease; /* نعومة الحركة */
+}
+
+/* الواجهة الترحيبية */
+.hero {
+    height: 80vh;
+    background: 
+                url('https://images.unsplash.com/photo-1539650116574-8efeb43e2750?auto=format&fit=crop&w=1200&q=80') center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--bg-white);
+    padding: 0 20px;
+}
+#home_page{
+    color: black;
+    
+}
+
+
+/* مثال على العنوان الرئيسي في الواجهة */
+.hero-content h1 {
+    font-size: 3rem;
+    color: var(--accent-gold);
+    /* إضافة ظل ناعم باللون الأسود */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cta-btn {
+    background-color: var(--accent-gold);
+    color: var(--primary-blue);
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.cta-btn:hover {
+    background-color: #f39c12;
+    transform: scale(1.05);
+}
+
+/* أقسام الخدمات */
+.services-section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.services-section.bg-light {
+    background-color: var(--bg-light-gray);
+}
+
+.services-section h2 {
+    color: var(--primary-blue);
+    font-size: 2.2rem;
+    margin-bottom: 40px;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: var(--bg-white);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    width: 300px;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* مثال على العناوين الفرعية للخدمات */
+.card h3 {
+    color: var(--primary-blue);
+    padding: 15px 15px 5px;
+    /* توسيع المسافة بين الحروف قليلاً */
+    letter-spacing: 1px;
+    text-transform: uppercase; /* جعل الحروف كلها Capital */
+}
+
+.card p {
+    color: #666;
+    padding: 0 15px 20px;
+    font-size: 0.95rem;
+}
+
+/* الفوتر */
+footer {
+    background-color: var(--text-dark);
+    color: var(--bg-white);
+    text-align: center;
+    padding: 40px 20px;
+}
+
+footer h3 {
+    color: var(--accent-gold);
+    margin-bottom: 15px;
+}
+
+/* تظبيط الموبايل */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .hero-content h1 {
+        font-size: 2.2rem;
+    }
+}
+
+/* مثال على عنوان القسم (ممكن تجربه بدل اللون الثابت) */
+.services-section h2 {
+    font-size: 2.2rem;
+    margin-bottom: 40px;
+    
+    /* إخفاء اللون العادي */
+    background: linear-gradient(45deg, var(--primary-blue), var(--accent-gold));
+    -webkit-background-clip: text; /* قص الخلفية لتكون على شكل النص */
+    -webkit-text-fill-color: transparent; /* جعل لون النص شفاف ليظهر التدرج */
+    font-weight: bold;
+}
