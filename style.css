@@ -1,9 +1,8 @@
 /* =========================================================
 Google Font
 ========================================================= */
-
-@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@700&display=swap');
 /* =========================================================
 CSS Variables
 ========================================================= */
@@ -97,7 +96,15 @@ text-shadow:
 
 
 }
+@font-face {
+    font-family: 'HijonHigh';
+    src: url('font/mcs-hijon-high.ttf') format('truetype');
+}
 
+.logo {
+    font-family: 'HijonHigh', sans-serif;
+    font-size: 3rem;
+}
 /* Navigation */
 
 .navbar nav {
@@ -159,6 +166,8 @@ transform: translateY(-2px);
 .navbar nav a:hover::after {
 width: 70%;
 }
+
+
 
 /* =========================================================
 Hero Section
